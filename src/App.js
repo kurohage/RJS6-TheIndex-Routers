@@ -13,7 +13,7 @@ const instance = axios.create({
   baseURL: "https://the-index-api.herokuapp.com"
 });
 
-class App extends Component {
+export default class App extends Component {
   state = {
     authors: [],
     books: [],
@@ -86,4 +86,3 @@ class App extends Component {
   }
 }
 
-export default App;
