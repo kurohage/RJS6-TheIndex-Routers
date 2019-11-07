@@ -10,7 +10,12 @@ function Sidebar() {
       <img src={logo} className="logo" alt="the index logo" />
       <section>
         <h4 className="menu-item">
-          <NavLink to="/authors">AUTHORS</NavLink>
+          <div>
+            <NavLink to="/authors">AUTHORS</NavLink>
+          </div>
+          <div>
+            <NavLink to="/books">BOOKS</NavLink>
+          </div>
         </h4>
       </section>
     </div>
