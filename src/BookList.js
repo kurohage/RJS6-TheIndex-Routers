@@ -18,6 +18,9 @@ export default class BookList extends Component {
     this.setState({ filteredBooks: filteredBooks });
   };
 
+  // This is a neater way of doing it. Might use it later.
+  // filterBooksByColor = bookColor => this.state.filteredBooks.filter(book => book.color == bookColor)
+
   render() {
     let bookCards = [];
 

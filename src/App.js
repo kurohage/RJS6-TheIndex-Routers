@@ -45,6 +45,14 @@ export default class App extends Component {
     }
   }
 
+  /*
+  The question mark in bookColor? means the variable is optional. This makes adding /books/ alone redundant.
+   <Route
+            path="/books/"
+            render={props => <BookList {...props} books={this.state.books} />}
+          />
+*/
+
   getContentView = () => {
     if (this.state.loading) {
       return <Loading />;
@@ -60,11 +68,7 @@ export default class App extends Component {
             )}
           />
           <Route
-            path="/books/:bookColor"
-            render={props => <BookList {...props} books={this.state.books} />}
-          />
-          <Route
-            path="/books/"
+            path="/books/:bookColor?"
             render={props => <BookList {...props} books={this.state.books} />}
           />
         </Switch>
@@ -85,4 +89,3 @@ export default class App extends Component {
     );
   }
 }
-
